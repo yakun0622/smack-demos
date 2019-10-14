@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Register {
 
     public static void main(String[] args) throws IOException, XMPPException, SmackException, InterruptedException {
-        String account = "test";
+        String account = "java";
         String password = "123456";
 
         AbstractXMPPConnection conn = GetXMPPConnection.getConnection();

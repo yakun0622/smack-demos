@@ -9,10 +9,7 @@ public class SendMessage{
         String password = "123456";
         AbstractXMPPConnection conn = null;
         try {
-            conn = GetXMPPConnection.getConnection();
-            conn.login(account, password);
-            // 发送消息
-            ChatManager chatmanager = ChatManager.getInstanceFor(conn);
+            SmarkUtil smarkUtil = new SmarkUtil(account, password, "im.wanwan.com", "im.wanwan.com");
 //            Chat newChat = chatmanager.createChat("java3@admin-PC");
 //            newChat.sendMessage("java3 , my name is java");
         } catch (Exception e) {
